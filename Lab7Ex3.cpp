@@ -2,7 +2,7 @@
 #include<stdexcept>
 #include<string>
 using namespace std;
-class TestException:runtime_error{
+class TestException:public runtime_error{
 public:
 	TestException(string s = "")
 		:runtime_error(s){}
